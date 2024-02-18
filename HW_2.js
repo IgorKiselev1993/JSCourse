@@ -1,11 +1,11 @@
-// 1
+1
 const user = {
     name: "Boris",
     age: 24
 }
 
 user['firstName'] = user.name
-delete user.nameпше
+delete user.name
 
 console.log(user)
 
