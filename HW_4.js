@@ -2,11 +2,7 @@ CW
 1
 
 const person = {
-    name: "Pete",
-    age: 24,
-    salary: 2550,
-    street: "Some street",
-    houseNum: 52
+    name: "Pete", age: 24, salary: 2550, street: "Some street", houseNum: 52
 };
 
 function calculateAverage(obj) {
@@ -31,6 +27,7 @@ function calculateAverage(obj) {
 calculateAverage(person);
 
 2
+
 function customAssign(target, source) {
     for (let key in source) {
         target[key] = source[key];
@@ -104,22 +101,18 @@ const evenNumbers = numbers.filter(number => number % 2 === 0);
 console.log(evenNumbers)
 
 
-
 HW
 1
-const students = [
-    { name: 'Alice', grades: [85, 90, 92] },
-    { name: 'Bob', grades: [78, 80, 75] },
-    { name: 'Charlie', grades: [90, 92, 88] },
-    { name: 'Anna', grades: [99, 60, 83] },
-    { name: 'George', grades: [77, 82, 77] },
-    { name: 'Nick', grades: [70, 90, 83] },
-];
+const students = [{name: 'Alice', grades: [85, 90, 92]}, {name: 'Bob', grades: [78, 80, 75]}, {
+    name: 'Charlie', grades: [90, 92, 88]
+}, {name: 'Anna', grades: [99, 60, 83]}, {name: 'George', grades: [77, 82, 77]}, {name: 'Nick', grades: [70, 90, 83]},];
+
 function calculateAverage(grades) {
     const sum = grades.reduce((total, grade) => total + grade, 0);
     return sum / grades.length;
 
 }
+
 students.forEach(student => {
 
     const average = calculateAverage(student.grades)
@@ -140,7 +133,7 @@ console.log(topStudents)
 
 const array = [1, 2, 3, 4, 5, 6];
 
-Array.prototype.findAndPush = function(element) {
+Array.prototype.findAndPush = function (element) {
 
     let found = false;
 
@@ -219,20 +212,16 @@ console.log(difference);
 4
 
 const student = {
-    name: 'Alice',
-    age: 20,
-    grade: 'A',
-    address: {
-        city: 'New York',
-        zip: '10001',
-    },
-    hobbies: ['reading', 'traveling'],
+    name: 'Alice', age: 20, grade: 'A', address: {
+        city: 'New York', zip: '10001',
+    }, hobbies: ['reading', 'traveling'],
 };
+
 function printStudentInfo(student) {
 
     const {name, age, grade, address: {city, zip}, hobbies} = student;
 
-   const studentInfo = `Student: ${name}, Age: ${age}, Grade: ${grade}, City: ${city}, Zip: ${zip}, Hobbies: ${hobbies.join(', ')}`;
+    const studentInfo = `Student: ${name}, Age: ${age}, Grade: ${grade}, City: ${city}, Zip: ${zip}, Hobbies: ${hobbies.join(', ')}`;
 
     console.log(`"${studentInfo}"`);
 }
@@ -242,13 +231,11 @@ printStudentInfo(student);
 5
 
 const user = {
-    name: "Boris",
-    age: 24
+    name: "Boris", age: 24
 }
 
 const newUser = {
-    firstName: user.name,
-    age: user.age
+    firstName: user.name, age: user.age
 };
 
 console.log(newUser)
