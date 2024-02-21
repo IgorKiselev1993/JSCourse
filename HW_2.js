@@ -1,4 +1,4 @@
-1
+// 1
 const user = {
     name: "Boris",
     age: 24
