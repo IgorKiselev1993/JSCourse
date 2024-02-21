@@ -65,6 +65,46 @@ const currentDate = new Date();
 const formattedDate = formatDate(currentDate);
 console.log(formattedDate);
 
+4
+
+const numbers = [5, -3, 9, -8, 3, 1, -5, 4];
+
+const positiveNumbers = []
+
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > 0) {
+        positiveNumbers.push(numbers[i]);
+    }
+}
+console.log(positiveNumbers)
+
+const totalSum = numbers.reduce((acc, current) => acc + current, 0);
+
+console.log(totalSum)
+
+const maxValue = Math.max.apply(null, numbers)
+
+const minValue = Math.min.apply(null, numbers)
+
+console.log(maxValue)
+console.log(minValue)
+
+const squaredNumbers = []
+
+for (let i in numbers) {
+
+    squaredNumbers.push(numbers[i] ** 2);
+
+}
+
+console.log(squaredNumbers)
+
+const evenNumbers = numbers.filter(number => number % 2 === 0);
+
+console.log(evenNumbers)
+
+
+
 HW
 1
 const students = [
