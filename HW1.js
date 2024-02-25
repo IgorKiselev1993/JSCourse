@@ -1,7 +1,7 @@
-// function showMessage() {
-//     console.log("Hello JSCourse!");
-// }
-// showMessage()
+function showMessage() {
+    console.log("Hello JSCourse!");
+}
+showMessage()
 
 
 

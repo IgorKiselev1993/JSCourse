@@ -20,11 +20,9 @@ function calculateAverage(obj) {
         console.log("Среднее арифметическое числовых значений объекта:", average);
     }
 }
-
 calculateAverage(person);
 
 2
-
 function customAssign(target, source) {
 
     for (let key in source) {
@@ -48,7 +46,6 @@ function formatDate(date) {
     let result = "";
     let step = 0;
     const separators = [".", ".", ",", ":", ":", ""];
-
     for (let key in dateObject) {
         result += addLeadingZero(dateObject[key]) + separators[step];
         step++;
@@ -94,9 +91,12 @@ console.log(evenNumbers)
 
 HW
 1
-const students = [{name: 'Alice', grades: [85, 90, 92]}, {name: 'Bob', grades: [78, 80, 75]}, {
-    name: 'Charlie', grades: [90, 92, 88]
-}, {name: 'Anna', grades: [99, 60, 83]}, {name: 'George', grades: [77, 82, 77]}, {name: 'Nick', grades: [70, 90, 83]},];
+const students = [{name: 'Alice', grades: [85, 90, 92]},
+    {name: 'Bob', grades: [78, 80, 75]},
+    {name: 'Charlie', grades: [90, 92, 88]},
+    {name: 'Anna', grades: [99, 60, 83]},
+    {name: 'George', grades: [77, 82, 77]},
+    {name: 'Nick', grades: [70, 90, 83]},];
 
 function calculateAverage(grades) {
     const sum = grades.reduce((total, grade) => total + grade, 0);
@@ -176,7 +176,6 @@ const date1 = new Date('2024-02-21T19:20:00');
 const date2 = new Date('2021-08-01T11:50:15');
 const difference = dateDifference(date1, date2);
 console.log(difference);
-
 
 4
 

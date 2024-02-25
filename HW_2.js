@@ -6,13 +6,10 @@ const user = {
 
 user['firstName'] = user.name
 delete user.name
-
 console.log(user)
 
 // 2
 const fruitContainer = []
-
-
 fruitContainer.push ('Lime','Orange','Fig')
 fruitContainer[1] = 'Kiwi'
 console.log(fruitContainer)
@@ -23,8 +20,6 @@ const yearsOfService = 5;
 const performanceRating = 3;
 const pay = 20000;
 let bonus = 0;
-
-
 function calcBonus (yearsOfServise, performanceRating) {
     if (yearsOfService < 5 && (performanceRating === 4 || performanceRating === 5)) {
         bonus = pay * 0.05
@@ -35,21 +30,15 @@ function calcBonus (yearsOfServise, performanceRating) {
     } else {
         return `Cотрудник не получает бонус!`
     }
-
 }
 console.log (calcBonus(yearsOfService,performanceRating));
-
 const employeeInfo = {
     yearsOfService: yearsOfService,
     performanceRating: performanceRating,
     pay: pay,
     bonus: bonus
-
 };
-
 console.log(employeeInfo);
-
-
 // 4
 const userData = {
     name: "Victor",
@@ -61,7 +50,6 @@ const userData = {
         zipCode: '12345'
     }
 }
-
 const userData2 = {
     name: "Vlad",
     age: "31",
@@ -72,9 +60,7 @@ const userData2 = {
         zipCode: null
     }
 }
-
 const data = [userData, userData2]
-
 if (data[2]) {
     console.log("1") // Массива с индексом 2 нету = false
 } else if (data[0].age === data[1].age && !(typeof data[0].name !== "string" || typeof data[1].address.zipCode)) {
@@ -86,9 +72,6 @@ if (data[2]) {
 } else {
     console.log("5")
 }
-
-// Что будет выведено в консоли и почему
-
 // 5
 let programmingLanguage = 'JavaScript'
 switch (programmingLanguage) {
