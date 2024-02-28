@@ -1,0 +1,16 @@
+const arr:number[] = [1, 2, 3, 4, 5];
+const arr2:number[] = [1, 2, 3, 4, 5];
+const a1: number = 1;
+const a2: boolean = true;
+const a3: string = "stroka";
+const a4: number[] = [1, 2, 3, 4]
+const a5: Array<string> = ["1", "2", "str"]
+const a6: [string] = ["strokad"]
+const a7: [boolean, number] = [true, 1]
+const a8: [number[], Array<string>] = [[1, 2, 3], [""]];
+const b1: number = 70;
+const b2: boolean = false;
+const b3: string = "lalaka";
+const b4: [boolean, boolean] = [true, false];
+const b6: [number, string] = [10, "10"];
+const b7: boolean[] = [...[true]];
